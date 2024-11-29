@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
+    /* background: rgb(210,209,238);
+    background: linear-gradient(90deg, rgba(210,209,238,1) 0%, rgba(154,154,244,0.5327380952380952) 48%, rgba(150,234,251,1) 100%); */
+    /* background: rgb(196,236,210);
+    background: linear-gradient(90deg, rgba(196,236,210,1) 0%, rgba(175,255,238,0.5495448179271709) 48%, rgba(167,241,171,1) 100%); */
+    background-color: rgb(241, 250, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #333;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tabs button.active-tab {
+    background: #6a11cb;
+    color: white;
+}
+
+.tabs button:hover {
+    background: #ddd;
+}
+
+/* Forms */
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #6a11cb;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2575fc;
+}
