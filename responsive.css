@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(238, 245, 255);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(55, 55, 41);
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 2px 2px 2px rgb(181, 179, 179);
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+ul {
+    margin-right: 45px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+ul li a, ul li i {
+    margin-inline: 12px;
+    font-size: 18px;
+}
+
+ul li a:hover, ul li i:hover {
+    cursor: pointer;
+}
+
+/* Main section */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+}
+
+.mainText {
+    width: 50%;
+}
+
+.mainText h1, .mainText h2 {
+    font-size: 2rem;
+}
+
+.mainText p {
+    font-size: 1.2rem;
+}
+
+.mainText button {
+    width: 145px;
+    height: 40px;
+    background-color: rgb(216, 134, 134);
+    border: none;
+    font-size: 1rem;
+    color: #001524;
+    margin-top: 24px;
+    margin-bottom: 144px;
+    cursor: pointer;
+}
+
+.mainText button:hover {
+    border: 3px solid #001524;
+    background-color: transparent;
+    color: #001524;
+}
+
+.main img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    ul li a, ul li i {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainText, .main img {
+        width: 90%;
+        text-align: center;
+    }
+
+    .mainText h1, .mainText h2 {
+        font-size: 1.5rem;
+    }
+
+    .mainText button {
+        margin-bottom: 20px;
+    }
+}
+
+/* Products section */
+.container {
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.div1, .div2, .div3, .div4 {
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: rgb(225, 240, 240);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px rgb(124, 122, 122);
+    transition: transform 0.3s;
+}
+
+.div1:hover, .div2:hover, .div3:hover, .div4:hover {
+    transform: scale(1.05);
+}
+
+.details h2 {
+    text-align: center;
+}
+
+.details p {
+    margin: 10px;
+    font-size: 0.9rem;
+}
+
+.details button {
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: 10px auto;
+    background-color: rgb(59, 125, 224);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.details button a {
+    text-decoration: none;
+    color: white;
+}
+
+.details button:hover a {
+    color: rgb(11, 11, 11);
+}
+
+@media (max-width: 768px) {
+    .outer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div1, .div2, .div3, .div4 {
+        width: 90%;
+    }
+}
+
+/* About section */
+.bg {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.heading {
+    font-size: 2rem;
+    color: rgb(55, 55, 41);
+    margin-bottom: 20px;
+}
+
+.kashmir-beauty {
+    font-size: 1rem;
+    color: #001524;
+    word-spacing: 5px;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+/* Footer section */
+.footer {
+    background-color: #0d1b2a;
+    color: #fff;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #cfd9e6;
+}
+
+.footer-column ul li a:hover {
+    color: #ffb703;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffb703;
+    color: #0d1b2a;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #faa307;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
