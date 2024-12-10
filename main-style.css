@@ -13,39 +13,50 @@ body {
 }
 
 nav {
+    /* position: fixed; */
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: space-between;   /* updated */
     /* background-color: #eeee; */
     /* background-color: #001524; */
     background-color: rgb(55, 55, 41);
     color: white;
     /* padding: 17px; */
     box-shadow: 0px 2px 2px 2px rgb(181, 179, 179);
+    height: 60px;   /* updated */
+    align-items: center;
 }
 
 
 nav .logo {
-    margin-left: 10px;
+    margin-left: 40px;
     font-size: 24px;
+    /* align-items: center;
+    text-align: center; */
+    padding-top: auto;
+    /* padding-bottom: auto; */
 }
 
 ul {
     margin-right: 45px;
     margin-top: 7px;
+    
 }
 
 nav ul li {
     list-style: none;
+    align-items: center; /* updated */
 }
 
 ul li a{
     margin-inline: 22px;
     font-size: 20px;
+    align-items: center; /* updated */
 }
 
 ul li i {
     margin-inline: 22px;
-
+    align-items: center; /* updated */
     font-size: 22px;
 }
 
